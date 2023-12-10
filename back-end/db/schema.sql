@@ -1,11 +1,19 @@
-DROP DATABASE IF EXISTS template_test_dev;
-CREATE DATABASE template_test_dev;
+DROP DATABASE IF EXISTS superhero_dev;
+CREATE DATABASE superhero_dev;
 
-\c template_test_dev;
+\c superhero_dev;
 
-DROP TABLE IF EXISTS test;
-
-CREATE TABLE test (
-    id SERIAL PRIMARY KEY, 
-    name TEXT
+CREATE TABLE superhero (
+    id SERIAL PRIMARY KEY,
+    image TEXT,
+    name TEXT,
+    fullName TEXT,
+    location TEXT,
+    intelligence INT,
+    strength INT,
+    speed INT,
+    durability INT,
+    power INT,
+    combat INT,
+    connections TEXT
 );
